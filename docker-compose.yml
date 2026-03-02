@@ -1,0 +1,10 @@
+services:
+  company-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: company-api
+    environment:
+      - PORT=8282
+    ports:
+      - "8282:8282"
